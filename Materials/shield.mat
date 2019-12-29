@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: shield
+  m_Name: Shield
   m_Shader: {fileID: -6465566751694194690, guid: 3533b84d5b905bc49b06669f941ae388,
     type: 3}
   m_ShaderKeywords: 

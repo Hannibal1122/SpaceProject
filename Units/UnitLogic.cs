@@ -36,7 +36,7 @@ public class UnitLogic : MonoBehaviour
         if(Input.GetKey(KeyCode.Space) && Time.time > (ShotLostTime + 0.1))
         {
             GameObject instance = (GameObject)Instantiate(bullet, transform.position, Quaternion.identity);
-            instance.GetComponent<Rigidbody2D>().velocity = new Vector2(speedBullet * Mathf.Sin(-transform.eulerAngles.z * RADIAN), speedBullet * Mathf.Cos(-transform.eulerAngles.z * RADIAN));
+            instance.GetComponent<Rigidbody>().velocity = new Vector3(speedBullet * Mathf.Sin(-transform.eulerAngles.z * RADIAN), speedBullet * Mathf.Cos(-transform.eulerAngles.z * RADIAN), 0);
             instance.GetComponent<Transform>().Rotate(0, 0, transform.eulerAngles.z);
             Destroy(instance, 2f);
 
